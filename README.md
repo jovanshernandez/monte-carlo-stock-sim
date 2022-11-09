@@ -2,8 +2,9 @@
 
 A python script that generates Monte Carlo simulations to provide predicted future stock prices during a given interval.
 
-## Packages![monte-carlo-ibm](https://user-images.githubusercontent.com/15150787/200732624-4e503ee7-df4e-41b6-947b-b75118c3df1f.jpg)
+![monte-carlo-ibm](https://user-images.githubusercontent.com/15150787/200733068-7ff883a2-8565-480a-a311-1c0ad9a04099.jpg)
 
+## Packages
 pandas_datareader.data
 pandas
 datetime
