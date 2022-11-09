@@ -8,8 +8,8 @@ from matplotlib import style
 
 style.use('ggplot')
 
-start = dt.datetime(2017, 1, 3)
-end = dt.datetime(2022, 11, 8)
+start = dt.datetime(2018, 1, 3)
+end = dt.datetime(2018, 11, 20)
 
 prices = web.DataReader('IBM', 'yahoo', start, end)['Close']
 returns = prices.pct_change()
@@ -18,7 +18,7 @@ last_price = prices[-1]
 
 #Number of Simulations
 num_simulations = 50
-num_days = 1260
+num_days = 252
 
 simulation_df = pd.DataFrame()
 
@@ -32,7 +32,7 @@ for x in range(num_simulations):
     price_series.append(price)
     
     for y in range(num_days):
-        if count == 1259:
+        if count == 251:
             break
         price = price_series[count] * (1 + np.random.normal(0, daily_vol))
         price_series.append(price)
