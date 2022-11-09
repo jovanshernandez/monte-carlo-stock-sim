@@ -8,7 +8,7 @@ A python script that generates Monte Carlo simulations to provide predicted futu
 pandas_datareader.data
 pandas
 datetime
-numpy as np
+numpy
 matplotlib.pyplot
 
 ## IDE
