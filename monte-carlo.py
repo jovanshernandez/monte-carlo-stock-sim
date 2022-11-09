@@ -39,7 +39,8 @@ for x in range(num_simulations):
         count +=1
         
     simulation_df[x] = price_series
-    
+
+# Plot Parameters
 fig = plt.figure()
 fig.suptitle('Monte Carlo Simulation: IBM')
 plt.plot(simulation_df)
