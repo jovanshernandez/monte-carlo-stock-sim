@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "monte-carlo-stock-sim"
+version = "0.1.0"
+description = "Monte Carlo stock price simulation CLI with testable core logic."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "pandas>=2.0",
+  "yfinance>=0.2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[project.scripts]
+monte-carlo-stock-sim = "monte_carlo_stock_sim.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["monte_carlo_stock_sim*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
